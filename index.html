@@ -5,42 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- Primary Meta Tags -->
-    <title>XStore.ge Domain for Sale - Premium Georgian E-commerce Domain | Buy XStore.ge</title>
-    <meta name="title" content="XStore.ge Domain for Sale - Premium Georgian E-commerce Domain | Buy XStore.ge">
-    <meta name="description" content="XStore.ge premium domain name for sale. Perfect for e-commerce, online store, Georgian business. Contact rezikolive@gmail.com to purchase this valuable .ge domain.">
-    <meta name="keywords" content="XStore.ge, domain for sale, Georgian domain, .ge domain, e-commerce domain, online store domain, premium domain, buy domain, Georgian business domain">
+    <title id="page-title">Domain for Sale - Premium Domain</title>
+    <meta name="title" content="Domain for Sale - Premium Domain" id="meta-title">
+    <meta name="description" content="Premium domain name for sale. Perfect for e-commerce, online store, business. Contact rezikolive@gmail.com to purchase this valuable domain." id="meta-description">
+    <meta name="keywords" content="domain for sale, premium domain, buy domain, e-commerce domain, online store domain" id="meta-keywords">
     <meta name="author" content="Domain Owner">
     <meta name="robots" content="index, follow">
     
     <!-- Canonical URL -->
-    <link rel="canonical" href="https://xstore.ge/">
+    <link rel="canonical" href="#" id="canonical-url">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://xstore.ge/">
-    <meta property="og:title" content="XStore.ge Domain for Sale - Premium Georgian E-commerce Domain">
-    <meta property="og:description" content="XStore.ge premium domain name for sale. Perfect for e-commerce, online store, Georgian business. Contact us to purchase this valuable .ge domain.">
-    <meta property="og:site_name" content="XStore.ge">
+    <meta property="og:url" content="#" id="og-url">
+    <meta property="og:title" content="Domain for Sale - Premium Domain" id="og-title">
+    <meta property="og:description" content="Premium domain name for sale. Perfect for e-commerce, online store, business. Contact us to purchase this valuable domain." id="og-description">
+    <meta property="og:site_name" content="" id="og-site-name">
     
     <!-- Twitter -->
     <meta property="twitter:card" content="summary">
-    <meta property="twitter:url" content="https://xstore.ge/">
-    <meta property="twitter:title" content="XStore.ge Domain for Sale - Premium Georgian E-commerce Domain">
-    <meta property="twitter:description" content="XStore.ge premium domain name for sale. Perfect for e-commerce, online store, Georgian business. Contact us to purchase this valuable .ge domain.">
+    <meta property="twitter:url" content="#" id="twitter-url">
+    <meta property="twitter:title" content="Domain for Sale - Premium Domain" id="twitter-title">
+    <meta property="twitter:description" content="Premium domain name for sale. Perfect for e-commerce, online store, business. Contact us to purchase this valuable domain." id="twitter-description">>
     
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%232c3e50'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='central' text-anchor='middle' font-family='Arial, sans-serif' font-size='18' font-weight='bold' fill='white'%3EX%3C/text%3E%3C/svg%3E">
     
     <!-- Structured Data - JSON-LD -->
-    <script type="application/ld+json">
+    <script type="application/ld+json" id="structured-data">
     {
         "@context": "https://schema.org",
         "@type": "Product",
-        "name": "XStore.ge Domain Name",
-        "description": "Premium Georgian domain name XStore.ge for sale. Perfect for e-commerce and online store businesses in Georgia.",
+        "name": "Premium Domain Name",
+        "description": "Premium domain name for sale. Perfect for e-commerce and online businesses.",
         "brand": {
             "@type": "Brand",
-            "name": "XStore.ge"
+            "name": "Domain"
         },
         "category": "Domain Name",
         "offers": {
@@ -52,7 +52,7 @@
                 "email": "rezikolive@gmail.com"
             }
         },
-        "url": "https://xstore.ge"
+        "url": "#"
     }
     </script>
     
@@ -259,87 +259,48 @@
         // Get the current domain name automatically
         const domainName = window.location.hostname;
         
-        // Update the page content with the actual domain name
+        // Update all elements that need the actual domain name
         document.addEventListener('DOMContentLoaded', function() {
             // Update domain name display
             const domainElement = document.getElementById('domain-name');
             domainElement.textContent = domainName;
             
             // Update page title
+            document.getElementById('page-title').textContent = `${domainName} Domain for Sale - Premium Domain | Buy ${domainName}`;
             document.title = `${domainName} Domain for Sale - Premium Domain | Buy ${domainName}`;
             
-            // Update meta description
-            const metaDesc = document.querySelector('meta[name="description"]');
-            if (metaDesc) {
-                metaDesc.content = `${domainName} premium domain name for sale. Perfect for businesses, e-commerce, online services. Contact rezikolive@gmail.com to purchase this valuable domain.`;
-            }
+            // Update meta tags
+            document.getElementById('meta-title').content = `${domainName} Domain for Sale - Premium Domain | Buy ${domainName}`;
+            document.getElementById('meta-description').content = `${domainName} premium domain name for sale. Perfect for e-commerce, online store, business. Contact rezikolive@gmail.com to purchase this valuable domain.`;
+            document.getElementById('meta-keywords').content = `${domainName}, domain for sale, premium domain, buy domain, ${domainName.split('.')[0]}, ${domainName.split('.').pop()} domain`;
             
-            // Update meta keywords
-            const metaKeywords = document.querySelector('meta[name="keywords"]');
-            if (metaKeywords) {
-                metaKeywords.content = `${domainName}, domain for sale, premium domain, buy domain, ${domainName.split('.')[0]}, ${domainName.split('.').pop()} domain`;
-            }
+            // Update URLs
+            const domainUrl = `https://${domainName}/`;
+            document.getElementById('canonical-url').href = domainUrl;
+            document.getElementById('og-url').content = domainUrl;
+            document.getElementById('twitter-url').content = domainUrl;
             
-            // Update Open Graph title
-            const ogTitle = document.querySelector('meta[property="og:title"]');
-            if (ogTitle) {
-                ogTitle.content = `${domainName} Domain for Sale - Premium Domain`;
-            }
-            
-            // Update Open Graph description
-            const ogDesc = document.querySelector('meta[property="og:description"]');
-            if (ogDesc) {
-                ogDesc.content = `${domainName} premium domain name for sale. Perfect for businesses, e-commerce, online services. Contact us to purchase this valuable domain.`;
-            }
-            
-            // Update canonical URL
-            const canonical = document.querySelector('link[rel="canonical"]');
-            if (canonical) {
-                canonical.href = `https://${domainName}/`;
-            }
+            // Update Open Graph and Twitter
+            document.getElementById('og-title').content = `${domainName} Domain for Sale - Premium Domain`;
+            document.getElementById('og-description').content = `${domainName} premium domain name for sale. Perfect for e-commerce, online store, business. Contact us to purchase this valuable domain.`;
+            document.getElementById('og-site-name').content = domainName;
+            document.getElementById('twitter-title').content = `${domainName} Domain for Sale - Premium Domain`;
+            document.getElementById('twitter-description').content = `${domainName} premium domain name for sale. Perfect for e-commerce, online store, business. Contact us to purchase this valuable domain.`;
             
             // Update structured data
-            const structuredData = document.querySelector('script[type="application/ld+json"]');
-            if (structuredData) {
-                const data = JSON.parse(structuredData.textContent);
-                data.name = `${domainName} Domain Name`;
-                data.description = `Premium domain name ${domainName} for sale. Perfect for businesses and online services.`;
-                data.brand.name = domainName;
-                data.url = `https://${domainName}`;
-                structuredData.textContent = JSON.stringify(data, null, 2);
-            }
+            const structuredDataElement = document.getElementById('structured-data');
+            const data = JSON.parse(structuredDataElement.textContent);
+            data.name = `${domainName} Domain Name`;
+            data.description = `Premium domain name ${domainName} for sale. Perfect for e-commerce and online businesses.`;
+            data.brand.name = domainName;
+            data.url = domainUrl;
+            structuredDataElement.textContent = JSON.stringify(data, null, 2);
             
-            // Update description text
-            const description = document.getElementById('description');
-            const tld = domainName.split('.').pop().toLowerCase();
-            let countryText = '';
-            
-            // Add country-specific text based on TLD
-            switch(tld) {
-                case 'ge':
-                    countryText = ' targeting the Georgian market';
-                    break;
-                case 'com':
-                    countryText = ' with global reach';
-                    break;
-                case 'us':
-                    countryText = ' targeting the US market';
-                    break;
-                case 'uk':
-                case 'co.uk':
-                    countryText = ' targeting the UK market';
-                    break;
-                default:
-                    countryText = '';
-            }
-            
-            description.textContent = `Secure this premium domain name perfect for businesses, e-commerce, online services${countryText}.`;
-            
-            // Update features title
+            // Update features title with actual domain
             const featuresTitle = document.getElementById('features-title');
             featuresTitle.textContent = `Why Choose ${domainName}?`;
             
-            // Update CTA button email subject
+            // Update CTA button email subject with actual domain
             const ctaButton = document.getElementById('cta-button');
             const currentHref = ctaButton.getAttribute('href');
             const updatedHref = currentHref.replace(
